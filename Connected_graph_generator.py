@@ -4,29 +4,8 @@ import string
 import math
 import json
 
-text = "Hello \n"
 
-#savefile = open('T.txt','w')
-#savefile.write("id\titem\tAddress\tDays till delivery \n")
-#for i in range (100):
-#    example_delivery = DeliveryOrder(i,"item" + str(random.randint(1,99)),"2601", random.randint(1,365))
-#    savefile.write(example_delivery.Printclass())
-#savefile.close()
-
-
-#testfile = open('Hash_test.txt','w')
-#testfile.write("Item\tLocation \n")
-#for i in range (250):
-##    s.insert("item" + str(i+1), 120 + i)
-#    testfile.write("item" + str(i+1) + "\t" + random.choice(string.ascii_uppercase)
-#    + str(random.randint(1,99)) + random.choice(string.ascii_uppercase) + "\n" )
-#testfile.close()
-
-
-#crimefile = open(fileName, 'r')
-#yourResult = [line.split(',') for line in crimefile.readlines()]
-
-num_vertices = 10
+num_vertices = 6
 graph= [[100]*num_vertices for i in range(num_vertices)]
 print(graph)
 for i in range(len(graph)):
@@ -51,11 +30,10 @@ for i in range(len(graph)):
             
             
 print (graph)
-#testfile = open('D_test.txt','w')
-#testfile.write(graph)
 
 
-with open('test-f3-5.txt', 'w') as f:
+
+with open('connected_graph.txt', 'w') as f:
     f.write(json.dumps(graph))
 
 #Now read the file back into a Python list object
